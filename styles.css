@@ -77,7 +77,7 @@ button.mode {
 button.toggle-trig {
   background: #008b8b;
   color: #fff;
-  grid-column: span 4; /* full width button */
+  grid-column: span 4; 
 }
 
 button:hover {
@@ -85,7 +85,6 @@ button:hover {
   opacity: 0.9;
 }
 
-/* hidden trig row */
 .hidden {
   display: none;
 }
