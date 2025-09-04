@@ -14,38 +14,38 @@ body {
 }
 
 .calculator {
-  width: 340px;
+  width: 380px;
   background: #222;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 
 #input-box {
   width: 100%;
-  height: 70px;
+  height: 80px;
   border: none;
   outline: none;
   background: #111;
   color: #0f0;
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 2.2rem;
+  padding: 15px;
   text-align: right;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 15px;
 }
 
 button {
-  height: 60px;
-  font-size: 1.2rem;
+  height: 70px;
+  font-size: 1.3rem;
   border: none;
-  border-radius: 12px;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -69,4 +69,14 @@ button.equal {
 button:hover {
   transform: scale(1.05);
   opacity: 0.9;
+}
+
+@media (max-width: 450px) {
+  .calculator {
+    width: 95%;
+  }
+  button {
+    height: 60px;
+    font-size: 1.1rem;
+  }
 }
