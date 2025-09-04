@@ -10,15 +10,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1e1e2e, #2e2e3e);
+  background: #000; 
 }
 
 .calculator {
   width: 380px;
-  background: #222;
+  background: #111;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
 }
 
 #input-box {
@@ -26,8 +26,8 @@ body {
   height: 80px;
   border: none;
   outline: none;
-  background: #111;
-  color: #0f0;
+  background: #000;
+  color: #fff;
   font-size: 2.2rem;
   padding: 15px;
   text-align: right;
@@ -46,43 +46,40 @@ body {
 button {
   height: 70px;
   font-size: 1.3rem;
-  border: none;
+  border: 2px solid #fff;
   border-radius: 15px;
   cursor: pointer;
   transition: 0.2s;
-}
-
-button.digit {
-  background: #333;
-  color: #fff;
+  background: #fff;   
+  color: #000;       
 }
 
 button.operator {
-  background: #444;
-  color: #ffcc00;
+  background: #fff;
+  color: #000;
 }
 
 button.equal {
-  background: #ff9500;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-weight: bold;
 }
 
 button.mode {
-  background: #0077ff;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-weight: bold;
 }
 
 button.toggle-trig {
-  background: #008b8b;
-  color: #fff;
+  background: #fff;
+  color: #000;
   grid-column: span 4; 
 }
 
 button:hover {
   transform: scale(1.05);
-  opacity: 0.9;
+  background: #ddd;
 }
 
 .hidden {
