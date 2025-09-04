@@ -35,10 +35,12 @@ body {
   margin-bottom: 20px;
 }
 
-.buttons {
+.buttons,
+.trig-buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  margin-top: 10px;
 }
 
 button {
@@ -66,9 +68,26 @@ button.equal {
   font-weight: bold;
 }
 
+button.mode {
+  background: #0077ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+button.toggle-trig {
+  background: #008b8b;
+  color: #fff;
+  grid-column: span 4; /* full width button */
+}
+
 button:hover {
   transform: scale(1.05);
   opacity: 0.9;
+}
+
+/* hidden trig row */
+.hidden {
+  display: none;
 }
 
 @media (max-width: 450px) {
