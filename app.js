@@ -5,7 +5,7 @@ const toggleTrigBtn = document.querySelector(".toggle-trig");
 
 let expression = "";
 let justCalculated = false; 
-let mode = "DEG"; // default mode
+let mode = "DEG"; 
 
 function toRadians(val) {
   return (val * Math.PI) / 180;
@@ -110,15 +110,18 @@ function calculate(value) {
   }
 }
 
-// ✅ Toggle trig row
+
 toggleTrigBtn.addEventListener("click", () => {
   trigContainer.classList.toggle("hidden");
 });
 
-// attach button clicks
+
 buttons.forEach(button => {
   button.addEventListener("click", e => {
-    calculate(e.target.innerText);
+    const val = e.target.innerText;
+    if (val !== "Trig") {  
+      calculate(val);
+    }
   });
 });
 
